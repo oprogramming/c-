@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(void)
+{
+	printf("%s\n%s\n%s\n","Programming"," is"," fun!!");
+	printf("%s\n"," \" C \"  programming language is a high-leve language.");
+	return 0;
+}
