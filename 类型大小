@@ -1,0 +1,26 @@
+/*================================================================
+*   Copyright (C) 2019 Sangfor Ltd. All rights reserved.
+*   
+*   文件名称：39.c
+*   创 建 者：Cui Xiaomin
+*   创建日期：2019年04月01日
+*   描    述：
+*
+================================================================*/
+
+
+#include <stdio.h>
+int main(void)
+{
+	printf("****基本类型的大小****\n");
+	printf("       char:%3ld byte \n",sizeof(char));
+	printf("      short:%3ld bytes\n",sizeof(short));
+	printf("        int:%3ld bytes\n",sizeof(int));
+	printf("       long:%3ld bytes\n",sizeof(long));
+	printf("  long long:%3ld bytes\n",sizeof(long long));
+	printf("   unsigned:%3ld bytes\n",sizeof(unsigned));
+	printf("      float:%3ld bytes\n",sizeof(float));
+	printf("     double:%3ld bytes\n",sizeof(double));
+	printf("long double:%3ld bytrs\n",sizeof(long double));
+	return 0;
+}
