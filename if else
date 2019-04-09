@@ -1,0 +1,74 @@
+/*================================================================
+*   Copyright (C) 2019 Sangfor Ltd. All rights reserved.
+*   
+*   文件名称：42.c
+*   创 建 者：Cui Xiaomin
+*   创建日期：2019年04月02日
+*   描    述：
+*
+================================================================*/
+
+
+#include <stdio.h>
+int main(void)
+{  
+	int math = 0,english = 0,fail = 0; //数学，英语，不合格
+   
+    printf("Math:");
+    scanf("%d",&math);
+   
+    printf("English:");
+    scanf("%d",&english);
+   
+    //||分段评价
+    math >= 60 || fail++;//仅在不足60时输出
+    english >= 60 || fail++;//同上
+    //&&分段评价
+    //只有fail存在一个以上时printf执行
+	fail && printf("不合格的科数量目是：%d\n\n",fail);
+	//*************************
+	if(math < 60)
+		printf("数学不合格\n");
+	if(math >= 60)
+		printf("数学合格\n");
+	//*************************
+	if(english >= 60)
+		printf("英语合格\n");
+	else
+		printf("英语不合格\n");
+	//*************************
+	if((0 <= math) && (math <= 100))
+	{
+		if(math < 60)
+			printf("数学不合格\n");
+	}
+	else
+		printf("数学合格\n");
+	//*************************
+	if (math  >= 90)
+		printf("Math is A\n");
+	else
+		if(math >= 80)
+			printf("Math is B\n");
+		else
+			if(math >= 70)
+				printf("Math is C\n");
+			else
+				if(math >= 60)
+					printf("Math is D\n");
+				else
+				printf("Math is F\n");
+	//*************************
+	if(english >= 90)
+		printf("English is A\n");
+	else if(english >= 80)
+		printf("English is B\n");
+	else if(english >= 70)
+		printf("English is C\n");
+	else if(english >= 60)
+		printf("English is D\n");
+	else
+		printf("English is F\n");
+	//*************************
+	return 0; 
+}    
