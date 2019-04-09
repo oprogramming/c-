@@ -1,0 +1,22 @@
+#include <stdio.h>                                                          
+int main(void)
+{
+    int radius;//半径
+    int diameter;//直径
+    float pi;
+ 
+    radius=0;
+    pi=3.14;
+ 
+    printf("输入半径(interger value):");
+    //输入半径
+    scanf("%d",&radius);
+    printf("半径 : %d\n",radius);
+    //半径
+    diameter = 2*radius;
+    printf("直径 : %d\n",diameter);
+    //直径
+    printf("圆周长 : %.2f\n",diameter*pi);
+    //圆周长
+    return 0;
+}
